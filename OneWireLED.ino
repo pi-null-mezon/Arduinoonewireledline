@@ -277,7 +277,7 @@ void toogleOddLight()
 //----------------------------------
 void toogleRandomLight()
 {
-    toogleLineOff();
+    toogleLineOn();
     long randomKey = random(m_devices) * 8;
     for(byte i = 0; i < 8; i++) {
       v_addr[i] = EEPROM.read(randomKey + i);
